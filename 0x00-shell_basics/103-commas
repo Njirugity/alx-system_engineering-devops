@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -amp -d [0-9]* n/
+ls -amp 
