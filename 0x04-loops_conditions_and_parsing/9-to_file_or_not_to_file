@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+if test -e "school"; then
+	echo "school file exists"
+
+	if test -d "school"; then
+		echo "school file is not empty" 
+	else
+		if test -f "school"; then
+			if test -z "$(cat school)"; then
+				echo "school file is empty"
+			else
+				echo "school file is not empty"
+			fi
+			echo "school is a regular file"
+		else
+			:
+		fi
+	fi
+else
+    echo "school file does not exist"
+fi

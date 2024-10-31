@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+n=0
+while [ $n -le 12 ];
+do
+	echo "Hour: $n"
+
+	j=1
+	while [ $j -lt 60 ];
+	do
+		echo $j
+		((j++))
+	done
+	((n++))
+done
