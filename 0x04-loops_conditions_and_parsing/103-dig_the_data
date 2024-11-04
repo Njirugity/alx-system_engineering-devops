@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#display visitor IP and HTTP status code
+#sort the IP from greatest to lowest
+
+awk '{print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn

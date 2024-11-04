@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#display the contents of a file
+
+while read -r file_name;
+do
+	echo "$file_name" | cut -d ':' -f1,3,6
+done < "/etc/passwd"
