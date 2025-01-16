@@ -1,4 +1,4 @@
-#!/usr/bin/env/bash
+#!/usr/bin/env bash
 # fix issues rising from using docker
 # make apache server return Hello Alx when querying tje root
 echo "ServerName localhost" >> /etc/apache2.conf
