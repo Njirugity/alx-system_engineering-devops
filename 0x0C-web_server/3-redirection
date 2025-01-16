@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Installs, configures, and starts the server
+apt-get -y update
+apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
+sh -c "echo 'Hello World!' > /var/www/html/index.html"
+sed -i '/listen 80 default_server?a rewrite
+service nginx restart
